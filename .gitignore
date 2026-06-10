@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+
+# Generated exports and QA artifacts
+exports/
+**/exports/
+qa-report.md
+qa-screenshot-report.md
+**/qa-report.md
+**/qa-screenshot-report.md
+
+# Local environment
+.env
+.env.*
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,169 @@
+{
+  "deck": {
+    "title": "Codex 入门",
+    "subtitle": "从聊天到真正让 AI 干活",
+    "aspectRatio": "16:9",
+    "theme": "neo-brutalist-codex",
+    "language": "zh-CN"
+  },
+  "slides": [
+    {
+      "id": "slide-001",
+      "type": "cover",
+      "kicker": "NEO-BRUTALIST CODEX",
+      "title": "Codex\n入门",
+      "subtitle": "不是聊天，而是把任务交给能执行的 AI Agent。",
+      "tag": "EXECUTE",
+      "notes": "用强标题建立认知差：Codex 的重点是执行任务。",
+      "visual": "/assets/images/visual-001.svg"
+    },
+    {
+      "id": "slide-002",
+      "type": "big-idea",
+      "kicker": "MINDSET SHIFT",
+      "title": "从“问 AI”到“让 AI 做”",
+      "subtitle": "当 AI 能读文件、改代码、跑命令、验证结果，交互方式就从对话变成协作。",
+      "chips": [
+        "问答",
+        "执行",
+        "验证"
+      ],
+      "notes": "强调从聊天心智切到任务心智。",
+      "visual": "/assets/images/visual-002.svg"
+    },
+    {
+      "id": "slide-003",
+      "type": "comparison",
+      "title": "ChatGPT 和 Codex 的区别",
+      "leftTitle": "ChatGPT",
+      "leftItems": [
+        "回答问题",
+        "生成建议",
+        "依赖你复制粘贴",
+        "结果常停在文本"
+      ],
+      "rightTitle": "Codex",
+      "rightItems": [
+        "执行任务",
+        "修改文件",
+        "运行命令",
+        "用验证闭环收尾"
+      ],
+      "notes": "对比要清晰，不贬低 ChatGPT，只说明使用场景不同。",
+      "visual": "/assets/images/visual-003.svg"
+    },
+    {
+      "id": "slide-004",
+      "type": "process",
+      "title": "Codex 的工作闭环",
+      "steps": [
+        "理解目标",
+        "读取项目",
+        "修改文件",
+        "运行验证",
+        "汇报结果"
+      ],
+      "notes": "流程图必须代码渲染，突出闭环而不是魔法。",
+      "visual": "/assets/images/visual-004.svg"
+    },
+    {
+      "id": "slide-005",
+      "type": "architecture",
+      "title": "它如何进入你的项目",
+      "layers": [
+        {
+          "name": "User Goal",
+          "body": "任务、约束、验收标准"
+        },
+        {
+          "name": "Workspace",
+          "body": "代码、文档、资源文件"
+        },
+        {
+          "name": "Tools",
+          "body": "终端、文件编辑、浏览器、导出"
+        },
+        {
+          "name": "Result",
+          "body": "可检查的改动和报告"
+        }
+      ],
+      "notes": "让用户理解 Codex 不是外部建议，而是在工作区里行动。",
+      "visual": "/assets/images/visual-005.svg"
+    },
+    {
+      "id": "slide-006",
+      "type": "code-demo",
+      "title": "一次典型任务长什么样",
+      "prompt": "帮我把登录页移动端布局修好：不要改接口，保留现有组件风格，最后跑 build 并告诉我改了哪些文件。",
+      "actions": [
+        "定位页面和样式",
+        "修改布局代码",
+        "运行构建验证",
+        "总结改动与风险"
+      ],
+      "notes": "示例 prompt 要具体，包含目标、约束、验证。",
+      "visual": "/assets/images/visual-006.svg"
+    },
+    {
+      "id": "slide-007",
+      "type": "data-dashboard",
+      "title": "Codex 适合处理哪些任务",
+      "cards": [
+        {
+          "value": "Bug",
+          "label": "定位并修复可复现问题"
+        },
+        {
+          "value": "Feature",
+          "label": "实现边界清楚的小功能"
+        },
+        {
+          "value": "Docs",
+          "label": "整理说明、README、迁移文档"
+        },
+        {
+          "value": "QA",
+          "label": "运行测试、截图、导出检查"
+        }
+      ],
+      "notes": "突出可验证、可拆解、可运行。",
+      "visual": "/assets/images/visual-007.svg"
+    },
+    {
+      "id": "slide-008",
+      "type": "checklist",
+      "title": "写好任务的 5 个要点",
+      "items": [
+        "说清目标",
+        "给足上下文",
+        "列出约束",
+        "定义验收",
+        "允许迭代"
+      ],
+      "notes": "给用户可立即使用的方法。",
+      "visual": "/assets/images/visual-008.svg"
+    },
+    {
+      "id": "slide-009",
+      "type": "quote",
+      "title": "把 Codex 当成同事，而不是搜索框",
+      "quote": "你给它目标、边界和反馈，它给你可检查的工作结果。",
+      "notes": "用金句收束协作心智。",
+      "visual": "/assets/images/visual-009.svg"
+    },
+    {
+      "id": "slide-010",
+      "type": "closing",
+      "title": "现在，把第一个任务交给 Codex",
+      "subtitle": "从一个小而清晰、能验证的任务开始。",
+      "items": [
+        "选一个真实项目",
+        "描述目标和限制",
+        "让 Codex 跑验证并汇报"
+      ],
+      "notes": "行动号召，形成闭环。",
+      "visual": "/assets/images/visual-010.svg"
+    }
+  ]
+}

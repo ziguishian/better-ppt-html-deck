@@ -1,0 +1,12 @@
+:root {
+  --paper: #f7f3e8;
+  --ink: #111111;
+  --white: #ffffff;
+  --blue: #2f6bff;
+  --yellow: #f6ff3d;
+  --pink: #ff4fb8;
+  --mint: #7cffb2;
+  --muted: #4a4a4a;
+  --border: 5px solid var(--ink);
+  --shadow: 10px 10px 0 var(--ink);
+}

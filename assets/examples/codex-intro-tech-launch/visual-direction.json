@@ -1,0 +1,31 @@
+{
+  "title": "Codex 入门",
+  "styleName": "neo-brutalist-codex",
+  "keywords": [
+    "neo brutalist",
+    "code-native",
+    "bold border",
+    "hard shadow",
+    "dev poster",
+    "editable HTML"
+  ],
+  "colors": {
+    "background": "#F7F3E8",
+    "surface": "#FFFFFF",
+    "text": "#111111",
+    "muted": "#4A4A4A",
+    "accent": "#2F6BFF",
+    "yellow": "#F6FF3D",
+    "pink": "#FF4FB8",
+    "mint": "#7CFFB2"
+  },
+  "typography": {
+    "title": "Inter / SF Pro / system-ui",
+    "mono": "JetBrains Mono / ui-monospace"
+  },
+  "notes": [
+    "新野兽派风格，高对比、厚边框、硬阴影。",
+    "流程图、架构图、终端窗口和代码块用 HTML/CSS/SVG 渲染。",
+    "每页只有一个核心观点，不能为了风格牺牲可读性。"
+  ]
+}

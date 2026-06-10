@@ -1,0 +1,3 @@
+display_name: Better PPT HTML Deck
+short_description: Create polished editable HTML slide decks with approval-gated style previews.
+default_prompt: 帮我做一个更好看的 HTML 版 PPT：先规划内容和审美预览图，确认后再生成可编辑、可预览、可播放、可导出的项目。

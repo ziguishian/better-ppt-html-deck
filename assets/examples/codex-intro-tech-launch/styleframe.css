@@ -1,0 +1,232 @@
+:root {
+  --paper: #f7f3e8;
+  --ink: #111111;
+  --blue: #2f6bff;
+  --yellow: #f6ff3d;
+  --pink: #ff4fb8;
+  --mint: #7cffb2;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: Inter, Arial Black, Arial, system-ui, sans-serif;
+  background: var(--paper);
+}
+
+.board {
+  position: relative;
+  width: 1600px;
+  height: 900px;
+  padding: 42px;
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(var(--ink) 2px, transparent 2px),
+    linear-gradient(90deg, var(--ink) 2px, transparent 2px),
+    var(--paper);
+  background-size: 64px 64px;
+}
+
+.board::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(247, 243, 232, .82);
+}
+
+.cover,
+.panel {
+  position: relative;
+  border: 5px solid var(--ink);
+  box-shadow: 14px 14px 0 var(--ink);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.cover {
+  padding: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover::after {
+  content: "EXECUTE";
+  position: absolute;
+  right: 24px;
+  top: 38px;
+  transform: rotate(9deg);
+  padding: 8px 16px;
+  border: 4px solid var(--ink);
+  background: var(--yellow);
+  font-size: 28px;
+  font-weight: 950;
+  letter-spacing: 0;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.eyebrow {
+  display: inline-block;
+  width: fit-content;
+  padding: 9px 14px;
+  border: 4px solid var(--ink);
+  background: var(--mint);
+  font-size: 22px;
+  font-weight: 950;
+  text-transform: uppercase;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+h1 {
+  margin: 34px 0 0;
+  max-width: 760px;
+  font-size: 122px;
+  line-height: .86;
+  font-weight: 950;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 0;
+  padding: 22px;
+  border: 4px solid var(--ink);
+  background: var(--blue);
+  color: var(--white);
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+  box-shadow: 9px 9px 0 var(--ink);
+}
+
+.hero-line {
+  height: 30px;
+  width: 74%;
+  border: 4px solid var(--ink);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pink) 0,
+    var(--pink) 32px,
+    var(--yellow) 32px,
+    var(--yellow) 64px
+  );
+}
+
+.right {
+  position: relative;
+  display: grid;
+  grid-template-rows: .86fr .96fr .98fr;
+  gap: 20px;
+}
+
+.panel {
+  padding: 22px 24px;
+}
+
+.panel:nth-child(1) {
+  background: var(--yellow);
+}
+
+.panel:nth-child(2) {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.panel:nth-child(3) {
+  background: var(--white);
+}
+
+.panel h2 {
+  margin: 0 0 14px;
+  font-size: 34px;
+  line-height: .95;
+  font-weight: 950;
+}
+
+.content-lines span {
+  display: block;
+  height: 25px;
+  margin: 13px 0;
+  border: 4px solid var(--ink);
+  background: var(--white);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.content-lines span:nth-child(2) {
+  width: 78%;
+  background: var(--mint);
+}
+
+.content-lines span:nth-child(3) {
+  width: 58%;
+  background: var(--pink);
+}
+
+.diagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.node {
+  min-height: 78px;
+  border: 4px solid var(--ink);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background: var(--white);
+  font-size: 22px;
+  font-weight: 950;
+  box-shadow: 7px 7px 0 var(--ink);
+}
+
+.node:nth-child(2) {
+  background: var(--yellow);
+}
+
+.swatches {
+  display: flex;
+  gap: 11px;
+}
+
+.swatch {
+  width: 68px;
+  height: 46px;
+  border: 4px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.keywords {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.keywords span {
+  padding: 7px 10px;
+  border: 3px solid var(--ink);
+  color: var(--ink);
+  background: var(--mint);
+  font-size: 15px;
+  font-weight: 900;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.keywords span:nth-child(2n) {
+  background: var(--yellow);
+}
+
+.keywords span:nth-child(3n) {
+  background: var(--pink);
+}

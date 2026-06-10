@@ -1,0 +1,21 @@
+{
+  "styleName": "neo-brutalist-codex",
+  "aspectRatio": "16:9",
+  "colors": {
+    "background": "#F7F3E8",
+    "surface": "#FFFFFF",
+    "text": "#111111",
+    "muted": "#4A4A4A",
+    "primary": "#2F6BFF",
+    "accent": "#F6FF3D",
+    "hot": "#FF4FB8",
+    "mint": "#7CFFB2"
+  },
+  "visualRules": [
+    "one core point per slide",
+    "no tiny text",
+    "no full-page image-only slides",
+    "prefer code-rendered diagrams",
+    "keep every primary text field editable"
+  ]
+}

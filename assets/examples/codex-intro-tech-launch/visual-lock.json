@@ -1,0 +1,43 @@
+{
+  "styleName": "neo-brutalist-codex",
+  "aspectRatio": "16:9",
+  "colors": {
+    "background": "#F7F3E8",
+    "surface": "#FFFFFF",
+    "text": "#111111",
+    "muted": "#4A4A4A",
+    "primary": "#2F6BFF",
+    "accent": "#F6FF3D",
+    "hot": "#FF4FB8",
+    "mint": "#7CFFB2"
+  },
+  "typography": {
+    "titleFamily": "Inter, Arial Black, Arial, system-ui, sans-serif",
+    "bodyFamily": "Inter, Arial, system-ui, sans-serif",
+    "monoFamily": "JetBrains Mono, ui-monospace, SFMono-Regular, Consolas, monospace",
+    "titleWeight": 950,
+    "bodyWeight": 750
+  },
+  "layout": {
+    "safeMargin": 56,
+    "grid": "12-column brutal grid",
+    "cardRadius": 0,
+    "borderWidth": 5,
+    "shadowOffset": 10
+  },
+  "components": {
+    "card": "thick-border-hard-shadow",
+    "diagram": "code-rendered-html-svg",
+    "image": "editable-framed-asset",
+    "icon": "bold-line-geometric"
+  },
+  "visualRules": [
+    "one core point per slide",
+    "no tiny text",
+    "no full-page image-only slides",
+    "use high-contrast brutal blocks",
+    "prefer code-rendered diagrams",
+    "keep every primary text field editable",
+    "do not sacrifice readability for brutalist styling"
+  ]
+}
