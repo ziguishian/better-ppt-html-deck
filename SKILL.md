@@ -12,12 +12,13 @@ Use this skill to help users quickly create better-looking PPT-style decks rende
 - Generate a style preview before building the final deck project.
 - Do not build the final `deck-project/` until the user explicitly approves `style-preview.png` or clearly says to proceed with that style.
 - Render the final deck from HTML/CSS/JS. HTML is the source of truth; PDF, PNG, and PPTX are exports.
-- Do not generate whole slides as static AI images. Image generation is allowed only for local visual assets such as cover hero art, background textures, illustrations, product concepts, or supporting images.
+- Do not generate whole slides as static AI images. Image generation is allowed only for local visual assets such as cover hero art, background textures, illustrations, product concepts, mood images, or supporting images.
+- When the user asks for GPT Image, gpt-image-2, AI-generated visuals, richer bitmap artwork, or a style that benefits from texture/atmosphere, use image generation for suitable local assets instead of falling back to plain SVG placeholders.
 - Prefer HTML/CSS/SVG for diagrams, architecture drawings, terminal windows, code blocks, data cards, timelines, comparison tables, UI frames, charts, and layout.
 - Keep all primary slide text in `src/data/deck.json`; do not hardcode main content inside components.
 - Make the final deck directly editable: every visible title, subtitle, list item, card label, diagram label, code/prompt snippet, quote, speaker note, and image/logo must be editable or replaceable from Edit Mode.
 - Include browser-side one-click PPTX export. Do not make users run a terminal command for the primary PPT export path.
-- Include meaningful visual assets or image slots. A final deck with no replaceable images/visuals is incomplete unless the user explicitly requests text-only slides.
+- Include meaningful visual assets or image slots. A final deck with no replaceable images/visuals is incomplete unless the user explicitly requests text-only slides. For polished decks, include at least one high-impact bitmap or generated visual asset when appropriate.
 
 ## Standard Workflow
 
@@ -38,7 +39,7 @@ Create `outline.md` with:
 
 - Deck title and narrative logic.
 - One core point per slide.
-- Slide title, information hierarchy, recommended slide type, likely visual assets, charts, diagrams, screenshots, code blocks, and visual notes.
+- Slide title, information hierarchy, recommended slide type, likely visual assets, generated bitmap assets, charts, diagrams, screenshots, code blocks, and visual notes.
 
 Avoid dense small text and overloaded slides.
 
@@ -65,7 +66,7 @@ This step is mandatory. Create a style board, not the final deck:
 - `styleframe.css`
 - `style-preview.png`
 
-Prefer code-rendered HTML/CSS for the preview. Use image generation only for local visual assets inside the board. The board should show a cover preview, content slide preview, diagram/chart slide preview, palette, type, component treatment, icon style, and style keywords.
+Prefer code-rendered HTML/CSS for the preview. Use image generation only for local visual assets inside the board. If the target style needs a bitmap hero, mood image, texture, product concept, or illustration, generate a representative local asset for the style preview. The board should show a cover preview, content slide preview, diagram/chart slide preview, palette, type, component treatment, icon style, and style keywords.
 
 After producing `style-preview.png`, stop and ask for approval or feedback. Do not continue into final deck generation.
 
@@ -130,13 +131,14 @@ The deck must support:
 - Preview Mode: hide editor controls and helpers; show near-export result.
 - Present Mode: fullscreen, arrow keys, space for next, Esc exit, page number, progress, optional speaker notes.
 - Export Mode: browser-side one-click image-based PPTX, PDF, per-slide PNG, `deck.json` import/export. The PPTX button must be visible in the app UI, not only documented as `npm run export:pptx`.
-- Visual Assets: include at least one editable/replacable image or SVG visual on the cover and enough supporting visuals across the deck to avoid a text-only result. Register all visuals in `src/data/deck.json`.
+- Visual Assets: include at least one editable/replaceable image or SVG visual on the cover and enough supporting visuals across the deck to avoid a text-only result. Prefer GPT Image / built-in image generation for cover hero, mood, product, background, or illustration assets when it improves quality. Register all visuals in `src/data/deck.json`.
 
 Before considering the deck complete, perform an editability audit:
 
 - Click-to-edit works for slide title, subtitle/body, list items, card headings, card bodies, diagram node labels, code/prompt text, quote text, closing CTA, and speaker notes.
 - Image/logo/visual slots support click upload, drag upload, JPG/PNG/WebP/SVG, object-fit cover/contain where relevant, and local autosave.
 - All edited values flow back to `deck.json` state and can be exported/imported.
+- Generated bitmap assets are copied into `public/assets/images`, logged in `image-prompts.md` and `asset-source-log.md`, and never referenced from the generation tool's default output folder.
 
 Include README instructions for starting, editing text, replacing images, switching modes, exporting PDF/PNG/PPTX, importing/exporting `deck.json`, restoring defaults, changing theme colors, and adjusting aspect ratio.
 
