@@ -2,6 +2,13 @@
 
 一个 Codex Skill，用于生成更好看、更专业、可编辑、可预览、可播放、可导出的 HTML 版 PPT。
 
+## 一些风格的展示
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3b53cb0d-6bb9-47fe-9b98-661875a7bee1" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/7f2efd8d-deb6-4eaf-b4d0-a95fe6af6562" />
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1ddbd268-083c-4523-b5be-bdf30588b2a9" />
+
+
+
 核心流程：
 
 1. 分析主题、资料、受众和页数。
