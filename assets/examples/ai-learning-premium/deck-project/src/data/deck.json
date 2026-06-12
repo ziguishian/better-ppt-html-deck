@@ -1,0 +1,121 @@
+{
+  "deck": {
+    "title": "AI 学习",
+    "subtitle": "从信息摄入到能力复利",
+    "aspectRatio": "16:9",
+    "theme": "glass-product-learning-os",
+    "language": "zh-CN"
+  },
+  "slides": [
+    {
+      "id": "slide-001",
+      "type": "cover",
+      "kicker": "AI LEARNING OS",
+      "title": "AI 学习",
+      "subtitle": "把提问、练习、反馈和复盘，组织成可持续增长的个人学习系统。",
+      "tag": "START",
+      "notes": "开场先建立认知：AI 学习不是收集更多工具，而是把学习过程产品化、系统化。",
+      "visual": "/assets/images/ai-learning-hero-v2.png"
+    },
+    {
+      "id": "slide-002",
+      "type": "big-idea",
+      "kicker": "MINDSET SHIFT",
+      "title": "AI 学习不是追工具",
+      "subtitle": "真正的差距来自问题定义、工作流设计、反馈质量，以及把经验沉淀为方法的能力。",
+      "chips": ["问题定义", "工作流", "反馈闭环"],
+      "notes": "强调学习 AI 的核心不是工具数量，而是能否把工具放进稳定可复用的任务系统。",
+      "visual": "/assets/images/visual-002.svg"
+    },
+    {
+      "id": "slide-003",
+      "type": "comparison",
+      "title": "低效学习 vs 高级学习",
+      "leftTitle": "低效学习",
+      "leftItems": ["收藏教程但很少实践", "跟热点换工具", "只看输出不看过程", "缺少反馈和复盘"],
+      "rightTitle": "高级学习",
+      "rightItems": ["从真实任务出发", "沉淀提示词和流程", "用验收标准校准输出", "把经验复用到新场景"],
+      "notes": "这页用对比让用户看到学习方式的差异。右侧不是更努力，而是更系统。",
+      "visual": "/assets/images/visual-003.svg"
+    },
+    {
+      "id": "slide-004",
+      "type": "architecture",
+      "title": "AI 学习的 4 层能力",
+      "layers": [
+        {"name": "认知框架", "body": "知道什么时候该用 AI，什么时候该先定义问题。"},
+        {"name": "提示表达", "body": "把目标、上下文、约束和验收标准讲清楚。"},
+        {"name": "工作流设计", "body": "把 AI 放进写作、分析、自动化和复盘链路。"},
+        {"name": "反馈验证", "body": "评价输出、追问细节、重构方案并留下记录。"}
+      ],
+      "notes": "四层能力栈是整套分享的主骨架，后面的流程和练习都围绕它展开。",
+      "visual": "/assets/images/visual-004.svg"
+    },
+    {
+      "id": "slide-005",
+      "type": "process",
+      "title": "从输入到能力的闭环",
+      "steps": ["输入材料", "提出问题", "真实实践", "反馈校准", "沉淀复用"],
+      "notes": "学习不是看完资料就结束，而是必须经过实践、反馈和复用，才会变成能力。",
+      "visual": "/assets/images/visual-005.svg"
+    },
+    {
+      "id": "slide-006",
+      "type": "code-demo",
+      "title": "好提示词是任务说明书",
+      "prompt": "请帮我把这份客户访谈整理成产品机会：\n1. 先提炼 5 个高频痛点\n2. 每个痛点给出证据句\n3. 按影响范围和紧急程度排序\n4. 最后给出 3 个可验证的 MVP 假设",
+      "actions": ["明确目标", "提供上下文", "列出约束", "定义验收"],
+      "notes": "提示词不要神秘化，它本质上是一份可执行、可检查的任务说明书。",
+      "visual": "/assets/images/visual-006.svg"
+    },
+    {
+      "id": "slide-007",
+      "type": "data-dashboard",
+      "title": "用真实任务学习",
+      "cards": [
+        {"value": "写作", "label": "从提纲、草稿到改写，建立表达模板。"},
+        {"value": "分析", "label": "把资料、数据、访谈转成结构化判断。"},
+        {"value": "自动化", "label": "把重复步骤做成脚本、表格或工作流。"},
+        {"value": "复盘", "label": "记录提示词、失败样例和改进规则。"}
+      ],
+      "notes": "建议听众从每天真实存在的任务里练习，不要另外开一个学习项目。",
+      "visual": "/assets/images/visual-007.svg"
+    },
+    {
+      "id": "slide-008",
+      "type": "checklist",
+      "title": "反馈决定上限",
+      "items": [
+        "先定义好结果的判断标准",
+        "要求 AI 暴露推理路径和不确定性",
+        "用追问定位偏差，而不是立刻重来",
+        "保留好版本和坏版本的差异",
+        "把修正经验写成下一次的约束"
+      ],
+      "notes": "反馈能力决定学习速度。重点不是一次得到完美答案，而是知道如何把答案变好。",
+      "visual": "/assets/images/visual-008.svg"
+    },
+    {
+      "id": "slide-009",
+      "type": "checklist",
+      "title": "30 天 AI 学习计划",
+      "items": [
+        "第 1 周：观察日常任务，找到 3 个高频场景",
+        "第 2 周：模仿优秀提示词，建立个人模板库",
+        "第 3 周：迁移到真实项目，记录成功和失败",
+        "第 4 周：创造自动化流程，形成可复用方法"
+      ],
+      "notes": "给出低摩擦路径，让用户知道从今天开始可以怎么做。",
+      "visual": "/assets/images/visual-009.svg"
+    },
+    {
+      "id": "slide-010",
+      "type": "closing",
+      "title": "把 AI 变成你的第二学习系统",
+      "subtitle": "从今天开始，选择一个真实任务，完成一次输入、提问、实践、反馈、沉淀的闭环。",
+      "items": ["选一个真实任务", "写清验收标准", "留下复盘记录"],
+      "notes": "结尾回到行动：不要等工具学全，而是立刻用一个任务开始构建学习系统。",
+      "visual": "/assets/images/ai-learning-hero-v2.png"
+    }
+  ]
+}

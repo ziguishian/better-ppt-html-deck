@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "export:pdf": "tsx scripts/export-pdf.ts",
+    "export:png": "tsx scripts/export-png.ts",
+    "export:pptx": "tsx scripts/export-pptx.ts",
+    "validate": "tsx scripts/validate-deck.ts",
+    "screenshot": "tsx scripts/screenshot-check.ts"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "tsx": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest",
+    "playwright": "latest",
+    "pptxgenjs": "latest"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,27 @@
+{
+  "title": "AI 学习",
+  "styleName": "glass-product-learning-os",
+  "keywords": [
+    "software product",
+    "glassmorphism",
+    "learning OS",
+    "AI workflow",
+    "cognitive dashboard"
+  ],
+  "colors": {
+    "background": "#F5F8FF",
+    "surface": "rgba(255,255,255,0.68)",
+    "paper": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#5F6B7A",
+    "accent": "#3B82F6",
+    "blue": "#3B82F6",
+    "cyan": "#44D7B6",
+    "gold": "#F2C86B"
+  },
+  "notes": [
+    "明亮、产品化、轻量毛玻璃质感。",
+    "GPT Image 用于局部主视觉，流程图和框架图仍使用代码渲染。",
+    "避免廉价蓝紫霓虹、机器人脸和低对比玻璃。"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "styleName": "glass-product-learning-os",
+  "aspectRatio": "16:9",
+  "colors": {
+    "background": "#F5F8FF",
+    "surface": "rgba(255,255,255,0.72)",
+    "text": "#111827",
+    "muted": "#5F6B7A",
+    "blue": "#3B82F6",
+    "cyan": "#44D7B6",
+    "gold": "#F2C86B",
+    "violet": "#7C6FF6"
+  },
+  "rules": [
+    "Use bright product backgrounds with subtle grids.",
+    "Use frosted-glass cards with readable contrast.",
+    "Keep primary slide text editable from deck.json.",
+    "Use local replaceable visuals, not whole-slide static images."
+  ]
+}

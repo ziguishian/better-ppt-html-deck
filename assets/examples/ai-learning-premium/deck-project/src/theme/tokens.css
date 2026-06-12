@@ -1,0 +1,16 @@
+:root {
+  --paper: #f5f8ff;
+  --ink: #111827;
+  --white: #ffffff;
+  --blue: #3b82f6;
+  --cyan: #44d7b6;
+  --gold: #f2c86b;
+  --violet: #7c6ff6;
+  --muted: #5f6b7a;
+  --line: rgba(61, 91, 140, .16);
+  --glass: rgba(255,255,255,.72);
+  --glass-strong: rgba(255,255,255,.88);
+  --border: 1px solid var(--line);
+  --shadow: 0 26px 70px rgba(59, 130, 246, .16);
+  --soft-shadow: 0 14px 36px rgba(17, 24, 39, .08);
+}

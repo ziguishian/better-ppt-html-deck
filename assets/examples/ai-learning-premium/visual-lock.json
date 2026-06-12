@@ -1,0 +1,38 @@
+{
+  "styleName": "glass-product-learning-os",
+  "aspectRatio": "16:9",
+  "colors": {
+    "background": "#F5F8FF",
+    "surface": "rgba(255,255,255,0.72)",
+    "surfaceStrong": "#FFFFFF",
+    "text": "#111827",
+    "muted": "#5F6B7A",
+    "blue": "#3B82F6",
+    "cyan": "#44D7B6",
+    "gold": "#F2C86B",
+    "violet": "#7C6FF6"
+  },
+  "typography": {
+    "ui": "Inter, Source Han Sans SC, Microsoft YaHei, system-ui, sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+  },
+  "layout": {
+    "slidePadding": 56,
+    "radius": 28,
+    "glassBlur": 18,
+    "grid": "subtle 64px product grid",
+    "density": "medium-low, one core message per slide"
+  },
+  "components": [
+    "frosted glass cards",
+    "software chrome labels",
+    "editable dashboard cards",
+    "code-rendered process and framework diagrams",
+    "replaceable image slots"
+  ],
+  "imageTreatment": {
+    "hero": "GPT Image generated bright SaaS product-learning dashboard",
+    "supporting": "local replaceable SVG visuals and product UI abstractions",
+    "forbidden": "whole-slide static images, dark neon cyberpunk, robot faces, brand logos"
+  }
+}
