@@ -2,7 +2,7 @@ import seedDeck from "../data/deck.json";
 
 export type DeckData = typeof seedDeck;
 
-const key = "codex-intro-neo-brutalist-deck";
+const key = "ai-learning-glass-product-deck-v1";
 
 export function loadDeck(): DeckData {
   const stored = localStorage.getItem(key);
